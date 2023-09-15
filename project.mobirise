@@ -1,0 +1,108 @@
+{
+  "settings": {
+    "name": "Nick Bitter",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2.5,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.2,
+        "isRoundedImages": false,
+        "isRoundedButtons": false,
+        "isLargeButtons": false,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.4",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/1694754351837_1.jpg",
+    "mbrsiteDomain": "rcq8tyr6kk",
+    "imageResize": false,
+    "usedWebp": false,
+    "robotsSwitcher": true,
+    "sitemapSwitcher": true,
+    "sitemapSwitcherAuto": "on",
+    "siteUrl": "https://nickbitter.com",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
+    "uniqCompNum": 1,
+    "versionPublish": "5.9.4"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Nick Bitter",
+        "meta_descr": "Nick Bitter",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_name": "social1",
+          "_sourceTheme": "temperm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"social1 mbr-section soundcloud2\" group=\"Social\" mbr-class=\"{'mbr-fullscreen': fullScreen}\" plugins=\"soundcloud-plugin\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Title\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Icons\" name=\"showIcons\" checked>\n        <select title=\"Amount\" name=\"iconsAmount\" condition=\"showIcons\">\n    <option value=\"1\">1</option>\n    <option value=\"2\">2</option>\n    <option value=\"3\">3</option>\n    <option value=\"4\">4</option>\n    <option value=\"5\" selected>5</option>\n    </select><input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#ffffff\" condition=\"showIcons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/temperm5/components/_images/background2.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"mbr-section__container\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <h3 class=\"mbr-fonts-style mbr-section-title align-center sc__title\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\" data-app-selector=\".sc__title\">Nick Bitter</h3>\n        <h3 class=\"mbr-fonts-style mbr-section-title align-center subtitle\" mbr-theme-style=\"display-1\" mbr-if=\"showSubtitle\" data-app-selector=\".subtitle, .icons-menu\">Nick Bitter</h3>\n        <div class=\"icons-menu align-center\" mbr-if=\"showIcons\">\n            <a class=\"iconfont-wrapper\" href=\"https://open.spotify.com/artist/5oFh9hExjZLNmHNufEyCnK\" target=\"_blank\">\n                <span mbr-icon class=\"p-2 mbr-iconfont socicon-spotify socicon\" style=\"font-size: 40px;\"></span>\n            </a>\n            <a class=\"iconfont-wrapper\" href=\"https://music.apple.com/us/artist/nick-bitter/1448134217\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                <span mbr-icon class=\"p-2 mbr-iconfont socicon-itunes socicon\" style=\"font-size: 40px;\"></span>\n            </a>\n            <a class=\"iconfont-wrapper\" href=\"https://www.youtube.com/channel/UCmyusqVOPzhHz7E4RGaS-Kw\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                <span mbr-icon class=\"p-2 mbr-iconfont socicon-youtube socicon\" style=\"font-size: 40px;\"></span>\n            </a>\n            <a class=\"iconfont-wrapper\" href=\"https://soundcloud.com/nickbitter\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                <span mbr-icon class=\"p-2 mbr-iconfont socicon-soundcloud socicon\" style=\"font-size: 40px;\"></span>\n            </a>\n            <a class=\"iconfont-wrapper\" href=\"https://www.instagram.com/nickbitter1/\" target=\"_blank\" mbr-if=\"iconsAmount > 4\">\n                <span mbr-icon class=\"p-2 mbr-iconfont socicon-instagram socicon\" style=\"font-size: 40px;\"></span>\n            </a>\n        </div>\n    </div>   \n</section>",
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".subtitle": {
+              "color": "#ffffff",
+              "text-transform": "uppercase",
+              "margin-bottom": "40px",
+              "font-weight": "600"
+            },
+            ".sc__title": {
+              "color": "#ffffff",
+              "text-transform": "uppercase",
+              "margin-bottom": "30px",
+              "font-weight": "600",
+              "padding-bottom": "0"
+            },
+            ".mbr-iconfont": {
+              "font-size": "36px",
+              "color": "@iconsColor"
+            }
+          },
+          "_cid": "tPTVES43z4",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "social1-0"
+        }
+      ]
+    }
+  }
+}
